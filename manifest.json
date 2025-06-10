@@ -1,0 +1,21 @@
+{
+  "name": "Excellence Travel Solutions Africa",
+  "short_name": "Excellence Travel",
+  "description": "Premium transport services across Kenya and East Africa",
+  "start_url": "/homepage.html",
+  "display": "standalone",
+  "background_color": "#008B8B",
+  "theme_color": "#008B8B",
+  "icons": [
+    {
+      "src": "public/services/logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "public/services/logo-512.png", 
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

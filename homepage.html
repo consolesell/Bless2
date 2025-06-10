@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excellence Travel Solutions Africa - Premium Transport Services</title>
+    <link rel="stylesheet" href="homepagestyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#008B8B">
+    <meta name="description" content="Premium transport services in Kenya - Airport transfers, Safari tours, Car hire, Executive transfers and more.">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="public/services/logo.png" alt="Excellence Travel Solutions Africa" id="logo">
+                <span class="logo-text">Excellence Travel Solutions Africa</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#" class="nav-link" id="logout-btn">Logout</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Premium Transport Solutions Across Africa</h1>
+            <p class="hero-subtitle">Experience excellence in travel with our professional transport services</p>
+            <div class="hero-cta">
+                <button class="btn-primary" onclick="scrollToServices()">Explore Services</button>
+                <button class="btn-secondary" onclick="window.location.href='bookings.html'">Book Now</button>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="container">
+            <h2 class="section-title">Welcome to Excellence Travel Solutions Africa</h2>
+            <p class="section-description">
+                Your trusted partner for premium transport services across Kenya and East Africa. 
+                We provide reliable, comfortable, and professional transportation solutions for all your travel needs.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Premium Services</h2>
+            <div class="services-grid" id="services-grid">
+                <!-- Services will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehicle Categories Section -->
+    <section class="vehicle-categories">
+        <div class="container">
+            <h2 class="section-title">Our Fleet</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="4-seater">
+                    <div class="category-icon">🚗</div>
+                    <h3>4 Seater</h3>
+                    <p>Perfect for couples and small families</p>
+                </div>
+                <div class="category-card" data-category="10-seater">
+                    <div class="category-icon">🚐</div>
+                    <h3>10 Seater</h3>
+                    <p>Ideal for small groups and families</p>
+                </div>
+                <div class="category-card" data-category="16-seater">
+                    <div class="category-icon">🚌</div>
+                    <h3>16 Seater</h3>
+                    <p>Great for medium-sized groups</p>
+                </div>
+                <div class="category-card" data-category="29-seater">
+                    <div class="category-icon">🚌</div>
+                    <h3>29 Seater</h3>
+                    <p>Perfect for large groups</p>
+                </div>
+                <div class="category-card" data-category="35-seater">
+                    <div class="category-icon">🚍</div>
+                    <h3>35 Seater</h3>
+                    <p>Ideal for corporate events</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>sblgivan@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h3>Phone Numbers</h3>
+                            <p>+254 728 883 988</p>
+                            <p>+254 759 881 087</p>
+                            <p>+254 788 115 252</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Excellence Travel Solutions Africa</h3>
+                    <p>Your trusted partner for premium transport services across Kenya and East Africa.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="bookings.html">Book Now</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: sblgivan@gmail.com</p>
+                    <p>Phone: +254 728 883 988</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Excellence Travel Solutions Africa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loader">
+            <div class="car-loader">🚗</div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- PWA Install Banner -->
+    <div class="pwa-banner" id="pwa-banner">
+        <div class="pwa-content">
+            <span>Install our app for better experience!</span>
+            <button class="btn-primary" id="install-btn">Install</button>
+            <button class="btn-close" id="close-banner">×</button>
+        </div>
+    </div>
+
+    <script type="module" src="homepagescript.js"></script>
+</body>
+</html>
